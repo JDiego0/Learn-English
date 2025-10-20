@@ -1,0 +1,156 @@
+.plan-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #f5f7fa 0%, #e4ebf3 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.plan-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 980px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-3px);
+}
+
+.plan-title {
+    font-size: 2rem;
+    color: #2d3748;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: #0077ff;
+    width: 30px;
+    height: 30px;
+}
+
+.plan-subtitle {
+    margin: 10px 0 35px;
+    color: #4a5568;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.accordion-item {
+    border-top: 1px solid #e2e8f0;
+    margin-top: 10px;
+}
+
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 18px 10px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2b6cb0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    border-radius: 8px;
+}
+
+.accordion-header:hover {
+    background: #e6f0ff;
+}
+
+.accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-section {
+    color: #4299e1;
+    width: 24px;
+    height: 24px;
+}
+
+.accordion-symbol {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.accordion-content {
+    padding: 20px 30px 30px;
+    background-color: #f9fafb;
+    color: #2d3748;
+    border-radius: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+    line-height: 1.7;
+}
+
+.accordion-content ul {
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.accordion-content li {
+    margin-bottom: 8px;
+}
+
+.study-plan a {
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.study-plan a:hover {
+    text-decoration: underline;
+}
+
+.study-plan table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.study-plan th,
+.study-plan td {
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.study-plan th {
+    background-color: #edf2f7;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.plan-footer {
+    margin-top: 40px;
+    text-align: center;
+    font-style: italic;
+    color: #4a5568;
+    font-size: 0.95rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
